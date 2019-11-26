@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Simple to do list to demonstrate ReactJS knowledge.
+Uses JSON placeholder to simulate APIs using my TodoDb repositry.
+https://my-json-server.typicode.com/nevets915/tododb/todo
+
 ## Available Scripts
 
 In the project directory, you can run:
