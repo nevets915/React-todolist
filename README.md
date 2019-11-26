@@ -4,6 +4,8 @@ Simple to do list to demonstrate ReactJS knowledge.
 Uses JSON placeholder to simulate APIs using my TodoDb repositry.
 https://my-json-server.typicode.com/nevets915/tododb/todo
 
+Repo: https://github.com/nevets915/TodoDb
+
 ## Available Scripts
 
 In the project directory, you can run:
