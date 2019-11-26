@@ -35,7 +35,7 @@ class App extends Component {
     // Delete Todo
     delTodo = (id) => {
         axios
-            .delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
+            .delete(`https://my-json-server.typicode.com/nevets915/tododb/todo/${id}`)
             .then((res) =>
                 this.setState({
                     todos: [...this.state.todos.filter((todo) => todo.id !== id)]
@@ -46,7 +46,7 @@ class App extends Component {
     // Add Todo
     addTodo = (title) => {
         axios
-            .post('https://jsonplaceholder.typicode.com/todos', {
+            .post('https://my-json-server.typicode.com/nevets915/tododb/todo', {
                 title,
                 completed: false
             })
@@ -57,6 +57,8 @@ class App extends Component {
     };
 
     render() {
+        const { todos } = this.state;
+
         return (
             <Router>
                 <div className='App'>
@@ -69,7 +71,7 @@ class App extends Component {
                                 <React.Fragment>
                                     <AddTodo addTodo={this.addTodo} />
                                     <Todos
-                                        todos={this.state.todos}
+                                        todos={todos}
                                         markComplete={this.markComplete}
                                         delTodo={this.delTodo}
                                     />
